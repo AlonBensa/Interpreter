@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArithmeticOperators.h" />
+    <ClInclude Include="AssignmentOperators.h" />
+    <ClInclude Include="AttributeError.h" />
+    <ClInclude Include="BitwiseOperators.h" />
+    <ClInclude Include="Blocks.h" />
+    <ClInclude Include="Boolean.h" />
+    <ClInclude Include="Classes.h" />
+    <ClInclude Include="CommentOperators.h" />
+    <ClInclude Include="ComparisionOperators.h" />
+    <ClInclude Include="Conditions.h" />
+    <ClInclude Include="Dictionary.h" />
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="FileExistsError.h" />
+    <ClInclude Include="FileNotFoundError.h" />
+    <ClInclude Include="Float.h" />
+    <ClInclude Include="Functions.h" />
+    <ClInclude Include="IdentationError.h" />
+    <ClInclude Include="IdentityOperators.h" />
+    <ClInclude Include="ImportError.h" />
+    <ClInclude Include="IndexError.h" />
+    <ClInclude Include="Integer.h" />
+    <ClInclude Include="InterpreterExceptions.h" />
+    <ClInclude Include="KeyboardInterrupt.h" />
+    <ClInclude Include="KeyError.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="LogicalOperators.h" />
+    <ClInclude Include="Loops.h" />
+    <ClInclude Include="MembershipOperators.h" />
+    <ClInclude Include="MemoryError.h" />
+    <ClInclude Include="ModuleNotFoundError.h" />
+    <ClInclude Include="NameError.h" />
+    <ClInclude Include="NotImplementedError.h" />
+    <ClInclude Include="Operators.h" />
+    <ClInclude Include="OverflowError.h" />
+    <ClInclude Include="PermissionError.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="RecursionError.h" />
+    <ClInclude Include="RuntimeError.h" />
+    <ClInclude Include="Sequence.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="String.h" />
+    <ClInclude Include="SyntaxError.h" />
+    <ClInclude Include="Tuple.h" />
+    <ClInclude Include="Type.h" />
+    <ClInclude Include="UnboundLocalError.h" />
+    <ClInclude Include="UnicodeDecodeError.h" />
+    <ClInclude Include="UnicodeEncodeError.h" />
+    <ClInclude Include="UnicodeError.h" />
+    <ClInclude Include="UnicodeTranslateError.h" />
+    <ClInclude Include="ValueError.h" />
+    <ClInclude Include="Void.h" />
+    <ClInclude Include="ZeroDivisionError.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArithmeticOperators.cpp" />
+    <ClCompile Include="AssignmentOperators.cpp" />
+    <ClCompile Include="AttributeError.cpp" />
+    <ClCompile Include="BitwiseOperators.cpp" />
+    <ClCompile Include="Blocks.cpp" />
+    <ClCompile Include="Boolean.cpp" />
+    <ClCompile Include="Classes.cpp" />
+    <ClCompile Include="CommentOperators.cpp" />
+    <ClCompile Include="ComparisionOperators.cpp" />
+    <ClCompile Include="Conditions.cpp" />
+    <ClCompile Include="Dictionary.cpp" />
+    <ClCompile Include="Exceptions.cpp" />
+    <ClCompile Include="FileExistsError.cpp" />
+    <ClCompile Include="FileNotFoundError.cpp" />
+    <ClCompile Include="Float.cpp" />
+    <ClCompile Include="Functions.cpp" />
+    <ClCompile Include="IdentationError.cpp" />
+    <ClCompile Include="IdentityOperators.cpp" />
+    <ClCompile Include="ImportError.cpp" />
+    <ClCompile Include="IndexError.cpp" />
+    <ClCompile Include="Integer.cpp" />
+    <ClCompile Include="KeyboardInterrupt.cpp" />
+    <ClCompile Include="KeyError.cpp" />
+    <ClCompile Include="List.cpp" />
+    <ClCompile Include="LogicalOperators.cpp" />
+    <ClCompile Include="Loops.cpp" />
+    <ClCompile Include="MembershipOperators.cpp" />
+    <ClCompile Include="MemoryError.cpp" />
+    <ClCompile Include="ModuleNotFoundError.cpp" />
+    <ClCompile Include="NameError.cpp" />
+    <ClCompile Include="NotImplementedError.cpp" />
+    <ClCompile Include="Operators.cpp" />
+    <ClCompile Include="OverflowError.cpp" />
+    <ClCompile Include="PermissionError.cpp" />
+    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="RecursionError.cpp" />
+    <ClCompile Include="RuntimeError.cpp" />
+    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="String.cpp" />
+    <ClCompile Include="SyntaxError.cpp" />
+    <ClCompile Include="Tuple.cpp" />
+    <ClCompile Include="UnboundLocalError.cpp" />
+    <ClCompile Include="UnicodeDecodeError.cpp" />
+    <ClCompile Include="UnicodeEncodeError.cpp" />
+    <ClCompile Include="UnicodeError.cpp" />
+    <ClCompile Include="UnicodeTranslateError.cpp" />
+    <ClCompile Include="ValueError.cpp" />
+    <ClCompile Include="Void.cpp" />
+    <ClCompile Include="ZeroDivisionError.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8f31fee5-ea79-48bd-b694-d0eaddca9d19}</ProjectGuid>
+    <RootNamespace>TheInterpreter</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
