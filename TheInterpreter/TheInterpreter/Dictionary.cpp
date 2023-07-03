@@ -104,6 +104,10 @@ Type* Dictionary::pop(Type* key)
 
 std::pair<Type*, Type*> Dictionary::popItem()
 {
+    if (this->_dictionary.size() == 0) {
+        throw KeyError("");
+    }
+
     auto last = this->_dictionary.end();
     last--;
 
