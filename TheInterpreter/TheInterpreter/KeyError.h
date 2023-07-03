@@ -4,10 +4,11 @@
 class KeyError : public InterpreterExceptions
 {
 public:
-	KeyError(std::string key, int amount);
+	KeyError(std::string key, bool isEmpty, std::string functionName);
 	virtual const char* what() const noexcept;
 private:
 	std::string _key;
-	int _amount;
+	bool _isEmpty;
+	std::string _functionName;
 };
 
