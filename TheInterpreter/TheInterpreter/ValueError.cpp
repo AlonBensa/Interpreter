@@ -9,7 +9,7 @@ ValueError::ValueError(std::string convertType, std::string currentType, std::st
 
 const char* ValueError::what() const noexcept
 {
-	if (IsInt(this->_convertType)) {
+	if (isInt(this->_convertType)) {
 		return ("ValueError: invalid literal for int() with base 10: '" + this->_value + "'").c_str();
 	}
 	return ("ValueError: could not convert " + this->_currentType + "to " + this->_convertType + ":'" + this->_value + "'").c_str();
