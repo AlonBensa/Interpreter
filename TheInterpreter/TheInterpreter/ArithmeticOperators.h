@@ -2,12 +2,13 @@
 #include "Operators.h"
 class ArithmeticOperators : public Operators
 {
-	Type* Add(Type* type,Type* type2);
-	Type* Substraction(Type* type, Type* type2);
-	Type* Multiplication(Type* type, Type* type2);
-	Type* Division(Type* type, Type* type2);
-	Type* Modulus(Type* type, Type* type2);
-	Type* Exponentiation(Type* type, Type* type2);
-	Type* FloorDivision(Type* type, Type* type2);
+public:
+	static Type* add(Type* firstVar,Type* secondVar);
+	static Type* substraction(Type* firstVar, Type* secondVar);
+	static Type* multiplication(Type* firstVar, Type* secondVar);
+	static Type* division(Type* firstVar, Type* secondVar);
+	static Type* modulus(Type* firstVar, Type* secondVar);
+	static Type* exponentiation(Type* firstVar, Type* secondVar);
+	static Type* floorDivision(Type* firstVar, Type* secondVar);
 };
 
