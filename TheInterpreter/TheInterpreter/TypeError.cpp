@@ -24,7 +24,7 @@ TypeError::TypeError(std::string functionName, std::string typeGiven, std::strin
 }
 const char* TypeError::what() const noexcept 
 {
-	if (!this->_firstType == NULL) 
+	if (this->_firstType != nullptr) 
 	{
 		if (this->_typesOperator.compare("multiply")) 
 		{
