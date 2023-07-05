@@ -1,15 +1,16 @@
 #include "KeyError.h"
 
-KeyError::KeyError(std::string key,bool isEmpty,std::string functionName)
+KeyError::KeyError(std::string key)
 {
 	this->_key = key;
-	this->_isEmpty = isEmpty;
-	this->_functionName = functionName;
 }
-
+KeyError::KeyError()
+{
+	this->_key = "";
+}
 const char* KeyError::what() const noexcept
 {
-	if (this->_isEmpty && strcmp(this->_functionName.c_str(), "popitem()") == 0) {
+	if (this->_key == "") {
 		return "KeyError: 'popitem(): dictionary is empty'";
 	}
 	return ("KeyError: " + this->_key).c_str();
