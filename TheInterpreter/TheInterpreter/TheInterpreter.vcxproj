@@ -35,6 +35,7 @@
     <ClInclude Include="FileNotFoundError.h" />
     <ClInclude Include="Float.h" />
     <ClInclude Include="Functions.h" />
+    <ClInclude Include="Helper.h" />
     <ClInclude Include="IdentationError.h" />
     <ClInclude Include="IdentityOperators.h" />
     <ClInclude Include="ImportError.h" />
@@ -90,6 +91,7 @@
     <ClCompile Include="FileNotFoundError.cpp" />
     <ClCompile Include="Float.cpp" />
     <ClCompile Include="Functions.cpp" />
+    <ClCompile Include="Helper.cpp" />
     <ClCompile Include="IdentationError.cpp" />
     <ClCompile Include="IdentityOperators.cpp" />
     <ClCompile Include="ImportError.cpp" />
