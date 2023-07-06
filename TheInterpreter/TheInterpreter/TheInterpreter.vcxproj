@@ -55,6 +55,7 @@
     <ClInclude Include="SyntaxError.h" />
     <ClInclude Include="Tuple.h" />
     <ClInclude Include="Type.h" />
+    <ClInclude Include="TypeError.h" />
     <ClInclude Include="UnboundLocalError.h" />
     <ClInclude Include="UnicodeDecodeError.h" />
     <ClInclude Include="UnicodeEncodeError.h" />
@@ -98,6 +99,7 @@
     <ClCompile Include="String.cpp" />
     <ClCompile Include="SyntaxError.cpp" />
     <ClCompile Include="Tuple.cpp" />
+    <ClCompile Include="TypeError.cpp" />
     <ClCompile Include="UnboundLocalError.cpp" />
     <ClCompile Include="UnicodeDecodeError.cpp" />
     <ClCompile Include="UnicodeEncodeError.cpp" />
