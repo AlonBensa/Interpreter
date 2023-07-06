@@ -32,7 +32,7 @@ std::string Queue::toString() const
     std::string str = "-> ";
 
     while (!tmp.empty()) {
-        str += tmp.front()->toString();
+        str += tmp.front()->toString() + " -> ";
         tmp.pop();
     }
 

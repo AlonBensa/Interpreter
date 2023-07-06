@@ -16,8 +16,7 @@ public:
 	bool isPrintable() const override;
 	std::string toString() const override;
 	bool empty() const;
-	int size() const;
 	Type* top() const;
-	void push();
+	void push(Type* elem);
 	Type* pop();
 };
