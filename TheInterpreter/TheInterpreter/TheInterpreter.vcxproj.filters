@@ -25,6 +25,12 @@
     <Filter Include="Source Files\Exceptions">
       <UniqueIdentifier>{3d7e84a7-6951-4065-81f0-d0a242fed9b2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Operators">
+      <UniqueIdentifier>{e4912aed-f45f-4407-bed6-127136417504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Operators">
+      <UniqueIdentifier>{c90d56c4-cab8-4f74-8600-e0cfeb461b77}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files\Blocks">
       <UniqueIdentifier>{2f7a9027-282f-4897-8003-97e563984855}</UniqueIdentifier>
     </Filter>
@@ -144,6 +150,33 @@
     <ClInclude Include="ZeroDivisionError.h">
       <Filter>Header Files\Exceptions</Filter>
     </ClInclude>
+    <ClInclude Include="ArithmeticOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="AssignmentOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="BitwiseOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="CommentOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="ComparisionOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="IdentityOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicalOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="MembershipOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="Operators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
     <ClInclude Include="Blocks.h">
       <Filter>Header Files\Blocks</Filter>
     </ClInclude>
@@ -162,6 +195,11 @@
     <ClInclude Include="Loops.h">
       <Filter>Header Files\Blocks</Filter>
     </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeError.h">
+      <Filter>Header Files\Exceptions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -267,6 +305,33 @@
     <ClCompile Include="ZeroDivisionError.cpp">
       <Filter>Source Files\Exceptions</Filter>
     </ClCompile>
+    <ClCompile Include="ArithmeticOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="AssignmentOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="BitwiseOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="CommentOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="ComparisionOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="IdentityOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicalOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="MembershipOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="Operators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
     <ClCompile Include="Blocks.cpp">
       <Filter>Source Files\Blocks</Filter>
     </ClCompile>
@@ -285,6 +350,11 @@
     <ClCompile Include="Functions.cpp">
       <Filter>Source Files\Blocks</Filter>
     </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeError.cpp">
+      <Filter>Source Files\Exceptions</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
