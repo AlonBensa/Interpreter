@@ -15,7 +15,7 @@ public:
 	void setIsTemp(bool isTemp) override;
 	bool isPrintable() const override;
 	std::string toString() const override;
-	void enqueue();
+	void enqueue(Type* elem);
 	Type* dequeue();
 	Type* front() const;
 	Type* rear() const;
