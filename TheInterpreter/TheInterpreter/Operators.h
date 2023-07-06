@@ -1,6 +1,7 @@
 #pragma once
 #include "Type.h";
 #include <unordered_map>;
+#include "Sequence.h"
 
 class Operators
 {
