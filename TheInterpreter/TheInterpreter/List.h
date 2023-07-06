@@ -1,5 +1,8 @@
 #pragma once
 #include "Sequence.h"
+#include "ValueError.h"
+#include "IndexError.h"
+#include "Helper.h"
 #include <vector>
 
 class List : public Sequence
@@ -20,13 +23,15 @@ public:
 	void extend(List obj);
 	void reverse();
 	void remove(Type* obj);
-	void pop(int index = -1);
+	Type* pop(int index = -1);
 	void clear();
 	int index(Type* obj, int start = 0, int end = -1) const;
 	int count(Type* obj) const;
 	void sort();
 	std::vector<Type*> copy() const;
-	std::vector<Type*> getList() const;
+
 	Type* operator[](int n) const;
+	Type* operator+(const Type* other) const;
+	Type* operator*(const Type* other) const;
 };
 
