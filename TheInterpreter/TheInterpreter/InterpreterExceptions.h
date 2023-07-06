@@ -2,6 +2,8 @@
 #include <exception>
 #include <string>
 #include <iostream>
+#include "Type.h"
+#include "Sequence.h"
 
 class InterpreterExceptions : public std::exception
 {
