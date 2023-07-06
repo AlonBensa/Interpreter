@@ -22,11 +22,15 @@ TypeError::TypeError(std::string functionName, std::string typeGiven, std::strin
 	this->_typeGiven = typeGiven;
 	this->_typeNeeded = typeNeeded;
 }
+TypeError::TypeError(std::string wrongType)
+{
+	this->_wrongType = wrongType;
+}
 const char* TypeError::what() const noexcept 
 {
 	if (this->_firstType != nullptr) 
 	{
-		if (this->_typesOperator.compare("multiply")) 
+		if (this->_typesOperator.compare("*")) 
 		{
 			if (dynamic_cast<Sequence*>(this->_firstType)) 
 			{
@@ -37,11 +41,11 @@ const char* TypeError::what() const noexcept
 				return ("TypeError: can't multiply sequence by non-int of type " + this->_firstType->toString()).c_str();
 			}
 		}
-		if (this->_typesOperator.compare("plus")) 
+		if (this->_typesOperator.compare("+")) 
 		{
 			return ("TypeError: can only concatenate" + this->_objName + "(not 'int') to " + this->_objName).c_str();
 		}
-		return ("TypeError: unsupported operand type(s) for &: '" + this->_firstType->toString() + "' and '" + this->_secondType->toString() + "'").c_str();
+		return ("TypeError: unsupported operand type(s) for " + this->_typesOperator + ": " + this->_firstType->toString() + "' and '" + this->_secondType->toString() + "'").c_str();
 	}
 
 
@@ -52,5 +56,9 @@ const char* TypeError::what() const noexcept
 	if (!this->_typeGiven.empty()) 
 	{
 		return ("TypeError: " + this->_functionName + " " + this->_argNum + "arg must be " + this->_typeNeeded + "not " + this->_typeGiven).c_str();
+	}
+	if (!this->_wrongType.empty()) 
+	{
+		return ("TypeError: argument of type '" + this->_wrongType + "' is not iterable").c_str();
 	}
 }

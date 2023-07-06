@@ -17,6 +17,6 @@ private:
 	std::string _objName;
 	int _amountOfArgumentGiven;
 	int _amountOfArgumentNeeded;
-	std::string _argNum
+	std::string _argNum;
 };
 
