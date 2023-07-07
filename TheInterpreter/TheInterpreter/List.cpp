@@ -142,13 +142,12 @@ Type* List::operator+(Type* other) const
         tmp->extend(*((List*)other));
         return tmp;
     }
-    throw TypeError();
+    throw TypeError(new List(*this), other, "+", this->getType());
 }
 
 Type* List::operator*(Type* other) const
 {
     List* tmp = new List(this->_list, true);
-    std::string str = "*";
 
     if (dynamic_cast<Integer*>(other)) {
         for (int i = 0; i < std::atoi(((Integer*)other)->toString().c_str()); i++)
@@ -157,5 +156,5 @@ Type* List::operator*(Type* other) const
         }
         return tmp;
     }
-    throw TypeError(new List(*this), other, str, this->getType());
+    throw TypeError(new List(*this), other, "*", this->getType());
 }
