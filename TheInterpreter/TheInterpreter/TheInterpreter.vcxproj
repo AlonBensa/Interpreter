@@ -19,15 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArithmeticOperators.h" />
-    <ClInclude Include="AssignmentOperators.h" />
     <ClInclude Include="AttributeError.h" />
-    <ClInclude Include="BitwiseOperators.h" />
     <ClInclude Include="Blocks.h" />
     <ClInclude Include="Boolean.h" />
     <ClInclude Include="Classes.h" />
-    <ClInclude Include="CommentOperators.h" />
-    <ClInclude Include="ComparisionOperators.h" />
     <ClInclude Include="Conditions.h" />
     <ClInclude Include="Dictionary.h" />
     <ClInclude Include="Exceptions.h" />
@@ -36,7 +31,6 @@
     <ClInclude Include="Float.h" />
     <ClInclude Include="Functions.h" />
     <ClInclude Include="IdentationError.h" />
-    <ClInclude Include="IdentityOperators.h" />
     <ClInclude Include="ImportError.h" />
     <ClInclude Include="IndexError.h" />
     <ClInclude Include="Integer.h" />
@@ -44,9 +38,7 @@
     <ClInclude Include="KeyboardInterrupt.h" />
     <ClInclude Include="KeyError.h" />
     <ClInclude Include="List.h" />
-    <ClInclude Include="LogicalOperators.h" />
     <ClInclude Include="Loops.h" />
-    <ClInclude Include="MembershipOperators.h" />
     <ClInclude Include="MemoryError.h" />
     <ClInclude Include="ModuleNotFoundError.h" />
     <ClInclude Include="NameError.h" />
@@ -74,15 +66,10 @@
     <ClInclude Include="ZeroDivisionError.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ArithmeticOperators.cpp" />
-    <ClCompile Include="AssignmentOperators.cpp" />
     <ClCompile Include="AttributeError.cpp" />
-    <ClCompile Include="BitwiseOperators.cpp" />
     <ClCompile Include="Blocks.cpp" />
     <ClCompile Include="Boolean.cpp" />
     <ClCompile Include="Classes.cpp" />
-    <ClCompile Include="CommentOperators.cpp" />
-    <ClCompile Include="ComparisionOperators.cpp" />
     <ClCompile Include="Conditions.cpp" />
     <ClCompile Include="Dictionary.cpp" />
     <ClCompile Include="Exceptions.cpp" />
@@ -91,16 +78,13 @@
     <ClCompile Include="Float.cpp" />
     <ClCompile Include="Functions.cpp" />
     <ClCompile Include="IdentationError.cpp" />
-    <ClCompile Include="IdentityOperators.cpp" />
     <ClCompile Include="ImportError.cpp" />
     <ClCompile Include="IndexError.cpp" />
     <ClCompile Include="Integer.cpp" />
     <ClCompile Include="KeyboardInterrupt.cpp" />
     <ClCompile Include="KeyError.cpp" />
     <ClCompile Include="List.cpp" />
-    <ClCompile Include="LogicalOperators.cpp" />
     <ClCompile Include="Loops.cpp" />
-    <ClCompile Include="MembershipOperators.cpp" />
     <ClCompile Include="MemoryError.cpp" />
     <ClCompile Include="ModuleNotFoundError.cpp" />
     <ClCompile Include="NameError.cpp" />
