@@ -27,7 +27,46 @@ void Operators::AssignVar(std::unordered_map<std::string, Type*> variables, std:
 
 bool Operators::inOperator(Type* firstType, Type* secondType)
 {
-	
+	if (!dynamic_cast<Sequence*>(secondType)) {
+		throw new TypeError(secondType->toString());
+	}
+	if (dynamic_cast<Stack*>(secondType)) {
+		Stack* copyStk = ((Stack*)secondType)->copy();
+		while (!copyStk->empty()) {
+			if (firstType->toString().compare(copyStk->pop()->toString()) == 0) {
+				return true;
+			}
+		}
+		return false;
+	}
+	if (dynamic_cast<Queue*>(secondType)) {
+		Queue* copyQueue = ((Queue*)secondType)->copy();
+		while (copyQueue->count != 0) {
+			if (firstType->toString().compare(copyQueue->dequeue()->toString()) == 0) {
+				return true;
+			}
+		}
+		return false;
+	}
+	if (dynamic_cast<List*>(secondType)) {
+		std::vector<Type*> copyList = ((List*)secondType)->copy();
+		for (int i = 0;i < copyList.size(); i++) {
+			if (copyList[i]->toString().compare(firstType->toString()) == 0) {
+				return true;
+			}
+		}
+		return false;
+	}
+	if (dynamic_cast<Dictionary*>(secondType)) {
+		//Dictionary* dictCopy = ((Dictionary*)secondType)->copy();
+	}
+	if (dynamic_cast<String*>(secondType)) {
+		
+	}
+	if (dynamic_cast<Tuple*>(secondType)) {
+		
+	}
+
 }
 
 bool Operators::notInOperator(Type* firstType, Type* secondType)
