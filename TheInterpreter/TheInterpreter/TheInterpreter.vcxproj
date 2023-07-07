@@ -113,10 +113,12 @@
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="RecursionError.cpp" />
     <ClCompile Include="RuntimeError.cpp" />
+    <ClCompile Include="Sequence.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="String.cpp" />
     <ClCompile Include="SyntaxError.cpp" />
     <ClCompile Include="Tuple.cpp" />
+    <ClCompile Include="Type.cpp" />
     <ClCompile Include="TypeError.cpp" />
     <ClCompile Include="UnboundLocalError.cpp" />
     <ClCompile Include="UnicodeDecodeError.cpp" />

@@ -9,8 +9,10 @@ private:
 	bool _isTemp;
 
 public:
-	virtual bool getIsTemp() const = 0;
-	virtual void setIsTemp(bool isTemp) = 0;
-	virtual bool isPrintable() const = 0;
+	Type(bool isTemp);
+	virtual bool getIsTemp() const;
+	virtual void setIsTemp(bool isTemp);
+	virtual bool isPrintable() const;
 	virtual std::string toString() const = 0;
+	virtual std::string getType() const = 0;
 };

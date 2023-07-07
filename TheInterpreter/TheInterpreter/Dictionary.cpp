@@ -1,29 +1,13 @@
 #include "Dictionary.h"
 
-Dictionary::Dictionary(std::unordered_map<Type*, Type*> dictionary, bool isTemp)
+Dictionary::Dictionary(std::unordered_map<Type*, Type*> dictionary, bool isTemp) : Sequence(isTemp)
 {
     this->_dictionary = dictionary;
-    this->_isTemp = isTemp;
 }
 
 int Dictionary::findLength() const
 {
     return this->_dictionary.size();
-}
-
-bool Dictionary::getIsTemp() const
-{
-    return this->_isTemp;
-}
-
-void Dictionary::setIsTemp(bool isTemp)
-{
-    this->_isTemp = isTemp;
-}
-
-bool Dictionary::isPrintable() const
-{
-    return true;
 }
 
 std::string Dictionary::toString() const
@@ -39,6 +23,11 @@ std::string Dictionary::toString() const
 
     dict += "}";
     return dict;
+}
+
+std::string Dictionary::getType() const
+{
+    return std::string();
 }
 
 void Dictionary::clear()

@@ -1,30 +1,20 @@
 #include "String.h"
 
+String::String(std::string string, bool isTemp) : Sequence(isTemp)
+{
+}
+
 int String::findLength() const
 {
     return 0;
 }
 
-String::String(std::string string, bool isTemp)
-{
-}
-
-bool String::getIsTemp() const
-{
-    return false;
-}
-
-void String::setIsTemp(bool isTemp)
-{
-
-}
-
-bool String::isPrintable() const
-{
-    return false;
-}
-
 std::string String::toString() const
+{
+    return std::string();
+}
+
+std::string String::getType() const
 {
     return std::string();
 }

@@ -9,15 +9,13 @@ class List : public Sequence
 {
 private:
 	std::vector<Type*> _list;
-	bool _isTemp;
 	int findLength() const override;
 
 public:
 	List(std::vector<Type*> list, bool isTemp);
-	bool getIsTemp() const override;
-	void setIsTemp(bool isTemp) override;
-	bool isPrintable() const override;
 	std::string toString() const override;
+	std::string getType() const override;
+
 	void append(Type* obj);
 	void insert(int index, Type* obj);
 	void extend(List obj);
@@ -31,7 +29,7 @@ public:
 	std::vector<Type*> copy() const;
 
 	Type* operator[](int n) const;
-	Type* operator+(const Type* other) const;
+	Type* operator+(Type* other) const;
 	Type* operator*(const Type* other) const;
 };
 

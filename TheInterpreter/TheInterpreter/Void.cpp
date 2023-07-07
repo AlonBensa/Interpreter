@@ -1,17 +1,7 @@
 #include "Void.h"
 
-Void::Void()
+Void::Void(bool isTemp) : Type(isTemp)
 {
-}
-
-bool Void::getIsTemp() const
-{
-    return false;
-}
-
-void Void::setIsTemp(bool isTemp)
-{
-
 }
 
 bool Void::isPrintable() const
@@ -20,6 +10,11 @@ bool Void::isPrintable() const
 }
 
 std::string Void::toString() const
+{
+    return std::string();
+}
+
+std::string Void::getType() const
 {
     return std::string();
 }

@@ -1,29 +1,13 @@
 #include "List.h"
 
-List::List(std::vector<Type*> list, bool isTemp)
+List::List(std::vector<Type*> list, bool isTemp) : Sequence(isTemp)
 {
     this->_list = list;
-    this->_isTemp = isTemp;
 }
 
 int List::findLength() const
 {
     return this->_list.size();
-}
-
-bool List::getIsTemp() const
-{
-    return this->_isTemp;
-}
-
-void List::setIsTemp(bool isTemp)
-{
-    this->_isTemp = isTemp;
-}
-
-bool List::isPrintable() const
-{
-    return true;
 }
 
 std::string List::toString() const
@@ -37,6 +21,11 @@ std::string List::toString() const
     list += "]";
 
     return list;
+}
+
+std::string List::getType() const
+{
+    return std::string();
 }
 
 void List::append(Type* obj)
@@ -138,12 +127,20 @@ std::vector<Type*> List::copy() const
 
 Type* List::operator[](int n) const
 {
+    if (n >= this->_list.size()) {
+        throw IndexError("");
+        return;
+    }
     return this->_list[n];
 }
 
-Type* List::operator+(const Type* other) const
+Type* List::operator+(Type* other) const
 {
+    List* tmp = new List(this->_list, true);
 
+    if (dynamic_cast<List*>(other)) {
+        tmp->extend(*((List*)other));
+    }
 }
 
 Type* List::operator*(const Type* other) const

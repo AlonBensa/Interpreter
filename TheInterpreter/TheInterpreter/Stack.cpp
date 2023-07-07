@@ -1,29 +1,13 @@
 #include "Stack.h"
 
-Stack::Stack(std::stack<Type*> stack, bool isTemp)
+Stack::Stack(std::stack<Type*> stack, bool isTemp) : Sequence(isTemp)
 {
     this->_stack = stack;
-    this->_isTemp = isTemp;
 }
 
 int Stack::findLength() const
 {
     return this->_stack.size();
-}
-
-bool Stack::getIsTemp() const
-{
-    return this->_isTemp;
-}
-
-void Stack::setIsTemp(bool isTemp)
-{
-    this->_isTemp = isTemp;
-}
-
-bool Stack::isPrintable() const
-{
-    return true;
 }
 
 std::string Stack::toString() const
@@ -39,6 +23,11 @@ std::string Stack::toString() const
     str += " ->";
 
     return str;
+}
+
+std::string Stack::getType() const
+{
+    return std::string();
 }
 
 bool Stack::empty() const
