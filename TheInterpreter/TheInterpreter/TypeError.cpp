@@ -43,7 +43,12 @@ const char* TypeError::what() const noexcept
 		}
 		if (this->_typesOperator.compare("+")) 
 		{
-			return ("TypeError: can only concatenate" + this->_objName + "(not 'int') to " + this->_objName).c_str();
+			if (dynamic_cast<Sequence*>(this->_firstType)) {
+				return ("TypeError: can only concatenate" + this->_objName + "(not '" + this->_secondType->toString() + "') to " + this->_objName).c_str();
+			}
+			else {
+				return ("TypeError: can only concatenate" + this->_objName + "(not '" + this->_firstType->toString() + "') to " + this->_objName).c_str();
+			}
 		}
 		return ("TypeError: unsupported operand type(s) for " + this->_typesOperator + ": " + this->_firstType->toString() + "' and '" + this->_secondType->toString() + "'").c_str();
 	}
