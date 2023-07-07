@@ -27,7 +27,7 @@ std::string Stack::toString() const
 
 std::string Stack::getType() const
 {
-    return std::string();
+    return "Stack";
 }
 
 bool Stack::empty() const

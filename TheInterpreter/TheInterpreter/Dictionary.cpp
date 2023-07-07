@@ -27,7 +27,7 @@ std::string Dictionary::toString() const
 
 std::string Dictionary::getType() const
 {
-    return std::string();
+    return "Dictionary";
 }
 
 void Dictionary::clear()

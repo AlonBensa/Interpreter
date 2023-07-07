@@ -16,7 +16,7 @@ std::string Tuple::toString() const
 
 std::string Tuple::getType() const
 {
-    return std::string();
+    return "Tuple";
 }
 
 int Tuple::index(std::string varName) const

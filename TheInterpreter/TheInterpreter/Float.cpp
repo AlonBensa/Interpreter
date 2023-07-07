@@ -12,5 +12,5 @@ std::string Float::toString() const
 
 std::string Float::getType() const
 {
-    return std::string();
+    return "Float";
 }

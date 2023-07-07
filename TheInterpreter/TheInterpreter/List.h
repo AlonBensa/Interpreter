@@ -1,7 +1,9 @@
 #pragma once
 #include "Sequence.h"
+#include "Integer.h"
 #include "ValueError.h"
 #include "IndexError.h"
+#include "TypeError.h"
 #include "Helper.h"
 #include <vector>
 
@@ -30,6 +32,6 @@ public:
 
 	Type* operator[](int n) const;
 	Type* operator+(Type* other) const;
-	Type* operator*(const Type* other) const;
+	Type* operator*(Type* other) const;
 };
 

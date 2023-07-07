@@ -12,5 +12,5 @@ std::string Integer::toString() const
 
 std::string Integer::getType() const
 {
-    return std::string();
+    return "Integer";
 }

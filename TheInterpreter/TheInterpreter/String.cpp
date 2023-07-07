@@ -16,7 +16,7 @@ std::string String::toString() const
 
 std::string String::getType() const
 {
-    return std::string();
+    return "String";
 }
 
 bool String::startsWith(std::string prefix, int start, int end) const

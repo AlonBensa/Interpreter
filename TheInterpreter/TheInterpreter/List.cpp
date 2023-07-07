@@ -25,7 +25,7 @@ std::string List::toString() const
 
 std::string List::getType() const
 {
-    return std::string();
+    return "List";
 }
 
 void List::append(Type* obj)
@@ -140,10 +140,22 @@ Type* List::operator+(Type* other) const
 
     if (dynamic_cast<List*>(other)) {
         tmp->extend(*((List*)other));
+        return tmp;
     }
+    throw TypeError();
 }
 
-Type* List::operator*(const Type* other) const
+Type* List::operator*(Type* other) const
 {
+    List* tmp = new List(this->_list, true);
+    std::string str = "*";
 
+    if (dynamic_cast<Integer*>(other)) {
+        for (int i = 0; i < std::atoi(((Integer*)other)->toString().c_str()); i++)
+        {
+            tmp->extend(*this);
+        }
+        return tmp;
+    }
+    throw TypeError(new List(*this), other, str, this->getType());
 }

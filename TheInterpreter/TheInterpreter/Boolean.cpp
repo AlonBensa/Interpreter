@@ -12,5 +12,5 @@ std::string Boolean::toString() const
 
 std::string Boolean::getType() const
 {
-    return std::string();
+    return "Boolean";
 }

@@ -27,7 +27,7 @@ std::string Queue::toString() const
 
 std::string Queue::getType() const
 {
-    return std::string();
+    return "Queue";
 }
 
 void Queue::enqueue(Type* elem)
