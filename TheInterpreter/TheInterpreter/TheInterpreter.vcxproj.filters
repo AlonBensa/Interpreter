@@ -198,6 +198,9 @@
     <ClInclude Include="Helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TypeError.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Boolean.cpp">
@@ -349,6 +352,9 @@
     </ClCompile>
     <ClCompile Include="Helper.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeError.cpp">
+      <Filter>Source Files\Exceptions</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
