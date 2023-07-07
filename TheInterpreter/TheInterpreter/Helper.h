@@ -14,7 +14,5 @@ class Helper
 public:
 	static bool isInt(std::string str);
 	static int getIndex(int length,int index);
-	int FindSizeArray(Type* type);
-	Type* FindSequence(Sequence* seq);
 };
 
