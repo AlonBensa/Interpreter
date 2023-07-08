@@ -2,7 +2,9 @@
 
 List::List(std::vector<Type*> list, bool isTemp) : Sequence(isTemp)
 {
-    this->_list = list;
+    for (Type* elem : list) {
+        this->_list.push_back(elem);
+    }
 }
 
 int List::findLength() const
@@ -156,5 +158,5 @@ Type* List::operator*(Type* other) const
         }
         return tmp;
     }
-    throw TypeError(new List(*this), other, "*", this->getType());
+    throw TypeError(new List(this->_list, true), other, "*", this->getType());
 }

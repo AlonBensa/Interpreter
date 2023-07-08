@@ -5,7 +5,7 @@
 
 class Type
 {
-private:
+protected:
 	bool _isTemp;
 
 public:
