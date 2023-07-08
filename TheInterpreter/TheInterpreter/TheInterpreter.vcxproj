@@ -30,6 +30,7 @@
     <ClInclude Include="FileNotFoundError.h" />
     <ClInclude Include="Float.h" />
     <ClInclude Include="Functions.h" />
+    <ClInclude Include="Helper.h" />
     <ClInclude Include="IdentationError.h" />
     <ClInclude Include="ImportError.h" />
     <ClInclude Include="IndexError.h" />
@@ -77,6 +78,7 @@
     <ClCompile Include="FileNotFoundError.cpp" />
     <ClCompile Include="Float.cpp" />
     <ClCompile Include="Functions.cpp" />
+    <ClCompile Include="Helper.cpp" />
     <ClCompile Include="IdentationError.cpp" />
     <ClCompile Include="ImportError.cpp" />
     <ClCompile Include="IndexError.cpp" />
@@ -95,10 +97,12 @@
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="RecursionError.cpp" />
     <ClCompile Include="RuntimeError.cpp" />
+    <ClCompile Include="Sequence.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="String.cpp" />
     <ClCompile Include="SyntaxError.cpp" />
     <ClCompile Include="Tuple.cpp" />
+    <ClCompile Include="Type.cpp" />
     <ClCompile Include="TypeError.cpp" />
     <ClCompile Include="UnboundLocalError.cpp" />
     <ClCompile Include="UnicodeDecodeError.cpp" />
