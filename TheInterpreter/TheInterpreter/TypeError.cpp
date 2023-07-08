@@ -34,23 +34,23 @@ const char* TypeError::what() const noexcept
 		{
 			if (dynamic_cast<Sequence*>(this->_firstType)) 
 			{
-				return ("TypeError: can't multiply sequence by non-int of type " + this->_secondType->toString()).c_str();
+				return ("TypeError: can't multiply sequence by non-int of type " + this->_secondType->getType()).c_str();
 			}
 			else 
 			{
-				return ("TypeError: can't multiply sequence by non-int of type " + this->_firstType->toString()).c_str();
+				return ("TypeError: can't multiply sequence by non-int of type " + this->_firstType->getType()).c_str();
 			}
 		}
 		if (this->_typesOperator.compare("+")) 
 		{
 			if (dynamic_cast<Sequence*>(this->_firstType)) {
-				return ("TypeError: can only concatenate" + this->_objName + "(not '" + this->_secondType->toString() + "') to " + this->_objName).c_str();
+				return ("TypeError: can only concatenate" + this->_objName + "(not '" + this->_secondType->getType() + "') to " + this->_objName).c_str();
 			}
 			else {
-				return ("TypeError: can only concatenate" + this->_objName + "(not '" + this->_firstType->toString() + "') to " + this->_objName).c_str();
+				return ("TypeError: can only concatenate" + this->_objName + "(not '" + this->_firstType->getType() + "') to " + this->_objName).c_str();
 			}
 		}
-		return ("TypeError: unsupported operand type(s) for " + this->_typesOperator + ": " + this->_firstType->toString() + "' and '" + this->_secondType->toString() + "'").c_str();
+		return ("TypeError: unsupported operand type(s) for " + this->_typesOperator + ": " + this->_firstType->getType() + "' and '" + this->_secondType->getType() + "'").c_str();
 	}
 
 
