@@ -15,33 +15,48 @@ std::string Float::getType() const
     return "Float";
 }
 
-Float& Float::exponentionEqual(const Type*& other)
+Float& Float::exponentionEqual(Type*& other)
 {
+    if (!dynamic_cast<Integer*>(other) && !dynamic_cast<Float*>(other))
+        throw TypeError(new Float(*this), other, "**", "");
+
     this->_num = std::pow(this->_num, std::stof(other->toString()));
     return *this;
 }
 
-Float& Float::floorDivisionEqual(const Type*& other)
+Float& Float::floorDivisionEqual(Type*& other)
 {
+    if (!dynamic_cast<Integer*>(other) && !dynamic_cast<Float*>(other))
+        throw TypeError(new Float(*this), other, "**", "");
+
     float divisor = std::stof(other->toString());
 
     if (divisor == 0.0f) {
         throw ZeroDivisionError();
-        return;
     }
 
     this->_num = std::floor(this->_num / divisor);
     return *this;
 }
 
-Float Float::exponention(const Type* other)
+Float Float::exponention(Type* other)
 {
-    return Float(*this).exponentionEqual(other);
+    try {
+        return Float(*this).exponentionEqual(other);
+    }
+    catch (const InterpreterExceptions& e) {
+        throw;
+    }
 }
 
-Float Float::floorDivision(const Type* other)
+Float Float::floorDivision(Type* other)
 {
-    return Float(*this).floorDivisionEqual(other);
+    try {
+        return Float(*this).floorDivisionEqual(other);
+    }
+    catch (const InterpreterExceptions& e) {
+        throw;
+    }
 }
 
 Float& Float::operator=(const Type*& other)
