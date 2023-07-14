@@ -1,29 +1,15 @@
 #include "List.h"
 
-List::List(std::vector<Type*> list, bool isTemp)
+List::List(std::vector<Type*> list, bool isTemp) : Sequence(isTemp)
 {
-    this->_list = list;
-    this->_isTemp = isTemp;
+    for (Type* elem : list) {
+        this->_list.push_back(elem);
+    }
 }
 
 int List::findLength() const
 {
     return this->_list.size();
-}
-
-bool List::getIsTemp() const
-{
-    return this->_isTemp;
-}
-
-void List::setIsTemp(bool isTemp)
-{
-    this->_isTemp = isTemp;
-}
-
-bool List::isPrintable() const
-{
-    return true;
 }
 
 std::string List::toString() const
@@ -37,6 +23,11 @@ std::string List::toString() const
     list += "]";
 
     return list;
+}
+
+std::string List::getType() const
+{
+    return "List";
 }
 
 void List::append(Type* obj)
@@ -54,7 +45,7 @@ void List::insert(int index, Type* obj)
 
 void List::extend(List obj)
 {
-    std::vector<Type*> anotherList = obj.getList();
+    std::vector<Type*> anotherList = obj.copy();
 
     for (const auto elem : anotherList) {
         this->_list.push_back(elem);
@@ -63,14 +54,31 @@ void List::extend(List obj)
 
 void List::reverse()
 {
+    std::reverse(this->_list.begin(), this->_list.end());
 }
 
 void List::remove(Type* obj)
 {
+    auto it = std::find(this->_list.begin(), this->_list.end(), obj);
+
+    if (it != this->_list.end()) {
+        this->_list.erase(it);
+    }
+    else {
+        throw ValueError("list", "remove");
+    }
 }
 
-void List::pop(int index)
+Type* List::pop(int index)
 {
+    index = Helper::getIndex(this->_list.size(), index);
+
+    if (index >= this->_list.size() || index < 0) {
+        throw IndexError("pop");
+        return;
+    }
+
+    return this->_list[index];
 }
 
 void List::clear()
@@ -80,7 +88,13 @@ void List::clear()
 
 int List::index(Type* obj, int start, int end) const
 {
-    if (end == -1) end = this->_list.size() - 1;
+    start = Helper::getIndex(this->_list.size(), start);
+    end = Helper::getIndex(this->_list.size(), end);
+
+    if ((start >= this->_list.size()) || (start < 0) || (end >= this->_list.size()) || (end < 0)) {
+        throw ValueError("list", "index", obj->toString());
+        return;
+    }
 
     for (int i = start; i < end; i++)
     {
@@ -105,6 +119,7 @@ int List::count(Type* obj) const
 
 void List::sort()
 {
+    std::sort(this->_list.begin(), this->_list.end());
 }
 
 std::vector<Type*> List::copy() const
@@ -112,12 +127,36 @@ std::vector<Type*> List::copy() const
     return this->_list;
 }
 
-std::vector<Type*> List::getList() const
-{
-    return this->_list;
-}
-
 Type* List::operator[](int n) const
 {
-    return this->_list[0];
+    if (n >= this->_list.size()) {
+        throw IndexError("");
+        return;
+    }
+    return this->_list[n];
+}
+
+Type* List::operator+(Type* other) const
+{
+    List* tmp = new List(this->_list, true);
+
+    if (dynamic_cast<List*>(other)) {
+        tmp->extend(*((List*)other));
+        return tmp;
+    }
+    throw TypeError(new List(*this), other, "+", this->getType());
+}
+
+Type* List::operator*(Type* other) const
+{
+    List* tmp = new List(this->_list, true);
+
+    if (dynamic_cast<Integer*>(other)) {
+        for (int i = 0; i < std::atoi(((Integer*)other)->toString().c_str()); i++)
+        {
+            tmp->extend(*this);
+        }
+        return tmp;
+    }
+    throw TypeError(new List(this->_list, true), other, "*", this->getType());
 }

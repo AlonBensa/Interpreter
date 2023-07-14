@@ -7,15 +7,13 @@ class Dictionary : public Sequence
 {
 private:
 	std::unordered_map<Type*, Type*> _dictionary;
-	bool _isTemp;
 	int findLength() const override;
 
 public:
 	Dictionary(std::unordered_map<Type*, Type*> dictionary, bool isTemp);
-	bool getIsTemp() const override;
-	void setIsTemp(bool isTemp) override;
-	bool isPrintable() const override;
 	std::string toString() const override;
+	std::string getType() const override;
+
 	void clear();
 	std::unordered_map<Type*, Type*> copy() const;
 	Type* get(Type* key) const;

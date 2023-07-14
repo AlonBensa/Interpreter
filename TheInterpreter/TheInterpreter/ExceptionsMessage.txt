@@ -1,0 +1,38 @@
+AttributeError: '{}' object has no attribute '{}'
+FileExistsError: File exists: '{}'
+FileNotFoundError: No such file or directory: '{}'
+IndentationError: expected an indented block
+ImportError: No module named {}
+IndexError: {} index out of range
+IndexError: list index out of range
+KeyError: 'popitem()': dictionary is empty
+KeyError: {}
+KeyboardInterrupt
+MemoryError: Out of memory
+ModuleNotFoundError: No module named '{}'
+NameError: '{}' is not defined
+NotImplementedError: This feature or method is not implemented yet
+OverflowError:Python int too large to convert to C long
+OvrflowError: math range error
+PermissionError: Premission denied: '{}'
+RecursionError: The maximum recursion depth has been exceeded
+RuntimeError
+SyntaxError: 'literal' is an illegal expression for augmented assignment
+SyntaxError: Invalid syntax.
+TypeError: can't multiply sequence by non-int of type {}
+TypeError: can only concatenate {} (not "{}") to {}
+TypeError: unsupported operand type(s) for {}: '{}' and '{}'
+TypeError: {}() takes at most {} arguments ({} given)
+TypeError: {} {} argument must be {}, not {}
+TypeError: argument of type '{}' is not iterable
+UnBoundLocalError: local variable '{}' referenced before assignment
+UnicodeDecodeError: '{}' codec can't decode byte {} in position {} invalid continuation byte
+UnicodeEncodeError: '{}' codec can't encode characters {} in position {}
+UnicodeTranslateError: '{}' codec can't translate character {} in position {} character maps to <undefined>.
+ValueError: {} is not in list
+ValueError: tuple.index(x): x not in tuple
+ValueError: list.remove(x): x not in list
+ValueError: substring not found
+ValueError: invalid literal for int() with base 10: '{}'
+ValueError: could not convert {} to {} : '{}'
+ZeroDivisionError: division or modulo by zero

@@ -5,15 +5,12 @@ class String : public Sequence
 {
 private:
 	std::string _string;
-	bool _isTemp;
 	int findLength() const override;
 
 public:
 	String(std::string string, bool isTemp);
-	bool getIsTemp() const override;
-	void setIsTemp(bool isTemp) override;
-	bool isPrintable() const override;
 	std::string toString() const override;
+	std::string getType() const override;
 
 	bool startsWith(std::string prefix, int start = 0, int end = -1) const;
 	bool endsWith(std::string suffix, int start = 0, int end = -1) const;
