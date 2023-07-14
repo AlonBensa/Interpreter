@@ -2,6 +2,14 @@
 #include "Type.h";
 #include <unordered_map>;
 #include "Sequence.h"
+#include "TypeError.h"
+#include "Stack.h"
+#include "Tuple.h"
+#include "List.h"
+#include "Dictionary.h"
+#include "String.h"
+#include "Queue.h"
+#include <vector>;
 
 class Operators
 {

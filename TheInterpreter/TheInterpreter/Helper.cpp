@@ -19,3 +19,4 @@ int Helper::getIndex(int length, int index)
 	}
 	return length + index;
 }
+
