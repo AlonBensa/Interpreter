@@ -83,7 +83,6 @@ Type* Dictionary::pop(Type* key)
 {
     if (this->_dictionary.find(key) == this->_dictionary.end()) {
         throw KeyError(key->toString());
-        return;
     }
 
     Type* tmp = this->_dictionary[key];

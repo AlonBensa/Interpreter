@@ -19,6 +19,11 @@ std::string Tuple::getType() const
     return "Tuple";
 }
 
+std::vector<Type*> Tuple::copy()
+{
+    return this->_tuple;
+}
+
 int Tuple::index(std::string varName) const
 {
     return 0;
