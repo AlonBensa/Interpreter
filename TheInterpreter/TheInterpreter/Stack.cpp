@@ -30,6 +30,11 @@ std::string Stack::getType() const
     return "Stack";
 }
 
+std::stack<Type*> Stack::copy()
+{
+    return this->_stack;
+}
+
 bool Stack::empty() const
 {
     return this->_stack.empty();

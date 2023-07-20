@@ -12,6 +12,7 @@ public:
 	Tuple(std::vector<Type*> tuple, bool isTemp);
 	std::string toString() const override;
 	std::string getType() const override;
+	std::vector<Type*> copy();
 
 	int index(std::string varName) const;
 	int count(std::string varName) const;

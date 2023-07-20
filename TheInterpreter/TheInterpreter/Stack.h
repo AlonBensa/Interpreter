@@ -12,6 +12,7 @@ public:
 	Stack(std::stack<Type*> stack, bool isTemp);
 	std::string toString() const override;
 	std::string getType() const override;
+	std::stack<Type*> copy();
 
 	bool empty() const;
 	Type* top() const;

@@ -12,6 +12,7 @@ public:
 	Queue(std::queue<Type*> queue, bool isTemp);
 	std::string toString() const override;
 	std::string getType() const override;
+	std::queue<Type*> copy();
 
 	void enqueue(Type* elem);
 	Type* dequeue();

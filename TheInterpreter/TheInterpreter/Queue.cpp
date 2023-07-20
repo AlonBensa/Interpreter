@@ -1,6 +1,6 @@
 #include "Queue.h"
 
-Queue::Queue(std::queue<Type*> queue, bool isTemp)
+Queue::Queue(std::queue<Type*> queue, bool isTemp) : Sequence(isTemp)
 {
     this->_queue = queue;
 }
@@ -28,6 +28,11 @@ std::string Queue::toString() const
 std::string Queue::getType() const
 {
     return "Queue";
+}
+
+std::queue<Type*> Queue::copy()
+{
+    return this->_queue;
 }
 
 void Queue::enqueue(Type* elem)

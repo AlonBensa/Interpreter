@@ -75,7 +75,6 @@ Type* List::pop(int index)
 
     if (index >= this->_list.size() || index < 0) {
         throw IndexError("pop");
-        return;
     }
 
     return this->_list[index];
@@ -93,7 +92,6 @@ int List::index(Type* obj, int start, int end) const
 
     if ((start >= this->_list.size()) || (start < 0) || (end >= this->_list.size()) || (end < 0)) {
         throw ValueError("list", "index", obj->toString());
-        return;
     }
 
     for (int i = start; i < end; i++)
@@ -131,7 +129,6 @@ Type* List::operator[](int n) const
 {
     if (n >= this->_list.size()) {
         throw IndexError("");
-        return;
     }
     return this->_list[n];
 }
