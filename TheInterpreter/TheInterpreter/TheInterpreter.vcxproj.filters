@@ -105,6 +105,33 @@
     <ClInclude Include="Operators.h">
       <Filter>Header Files\Operators</Filter>
     </ClInclude>
+    <ClInclude Include="ArithmeticOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="AssignmentOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="BitwiseOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="CommentOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="ComparisionOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="IdentityOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicalOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="MembershipOperators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="Operators.h">
+      <Filter>Header Files\Operators</Filter>
+    </ClInclude>
     <ClInclude Include="Blocks.h">
       <Filter>Header Files\Blocks</Filter>
     </ClInclude>
@@ -159,6 +186,33 @@
     </ClCompile>
     <ClCompile Include="Dictionary.cpp">
       <Filter>Source Files\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Operators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="ArithmeticOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="AssignmentOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="BitwiseOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="CommentOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="ComparisionOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="IdentityOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicalOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="MembershipOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
     </ClCompile>
     <ClCompile Include="Operators.cpp">
       <Filter>Source Files\Operators</Filter>

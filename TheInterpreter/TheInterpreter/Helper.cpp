@@ -19,4 +19,19 @@ int Helper::getIndex(int length, int index)
 	}
 	return length + index;
 }
-
+std::string Helper::FindBasicType(Type* type)
+{
+    if (dynamic_cast<Float*>(type)) {
+        return "float";
+    }
+    if (dynamic_cast<Integer*>(type)) {
+        return "integer";
+    }
+    if (dynamic_cast<Boolean*>(type)) {
+        return "boolean";
+    }
+    if (dynamic_cast<Void*>(type)) {
+        return "void";
+    }
+    return "";
+}
