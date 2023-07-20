@@ -1,167 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Header Files\Types">
-      <UniqueIdentifier>{826acff5-3415-4467-ad3e-42b6ade14356}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Types">
-      <UniqueIdentifier>{b513c2a0-da68-4b39-abbe-0f3d7dd304e1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Exceptions">
-      <UniqueIdentifier>{3d7e84a7-6951-4065-81f0-d0a242fed9b2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Operators">
-      <UniqueIdentifier>{e4912aed-f45f-4407-bed6-127136417504}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Operators">
-      <UniqueIdentifier>{c90d56c4-cab8-4f74-8600-e0cfeb461b77}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Blocks">
-      <UniqueIdentifier>{2f7a9027-282f-4897-8003-97e563984855}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Blocks">
-      <UniqueIdentifier>{323977d3-8695-4d13-8627-7a250e7eb951}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Exceptions">
-      <UniqueIdentifier>{26ab2ed2-911c-4f01-b4d3-416d2a22fd27}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Boolean.h">
-      <Filter>Header Files\Types</Filter>
-    </ClInclude>
-    <ClInclude Include="Dictionary.h">
-      <Filter>Header Files\Types</Filter>
-    </ClInclude>
-    <ClInclude Include="Float.h">
-      <Filter>Header Files\Types</Filter>
-    </ClInclude>
-    <ClInclude Include="Integer.h">
-      <Filter>Header Files\Types</Filter>
-    </ClInclude>
-    <ClInclude Include="List.h">
-      <Filter>Header Files\Types</Filter>
-    </ClInclude>
-    <ClInclude Include="Queue.h">
-      <Filter>Header Files\Types</Filter>
-    </ClInclude>
-    <ClInclude Include="Stack.h">
-      <Filter>Header Files\Types</Filter>
-    </ClInclude>
-    <ClInclude Include="String.h">
-      <Filter>Header Files\Types</Filter>
-    </ClInclude>
-    <ClInclude Include="Tuple.h">
-      <Filter>Header Files\Types</Filter>
-    </ClInclude>
-    <ClInclude Include="Type.h">
-      <Filter>Header Files\Types</Filter>
-    </ClInclude>
-    <ClInclude Include="Void.h">
-      <Filter>Header Files\Types</Filter>
-    </ClInclude>
-    <ClInclude Include="Sequence.h">
-      <Filter>Header Files\Types</Filter>
-    </ClInclude>
-    <ClInclude Include="Operators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="ArithmeticOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="AssignmentOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="BitwiseOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="CommentOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="ComparisionOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="IdentityOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="LogicalOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="MembershipOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="Operators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="ArithmeticOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="AssignmentOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="BitwiseOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="CommentOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="ComparisionOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="IdentityOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="LogicalOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="MembershipOperators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="Operators.h">
-      <Filter>Header Files\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="Blocks.h">
-      <Filter>Header Files\Blocks</Filter>
-    </ClInclude>
-    <ClInclude Include="Classes.h">
-      <Filter>Header Files\Blocks</Filter>
-    </ClInclude>
-    <ClInclude Include="Conditions.h">
-      <Filter>Header Files\Blocks</Filter>
-    </ClInclude>
-    <ClInclude Include="Exceptions.h">
-      <Filter>Header Files\Blocks</Filter>
-    </ClInclude>
-    <ClInclude Include="Functions.h">
-      <Filter>Header Files\Blocks</Filter>
-    </ClInclude>
-    <ClInclude Include="Loops.h">
-      <Filter>Header Files\Blocks</Filter>
-    </ClInclude>
-    <ClInclude Include="Helper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="Blocks.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
     <ClCompile Include="Boolean.cpp">
       <Filter>Source Files\Types</Filter>
     </ClCompile>
+    <ClCompile Include="Classes.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Conditions.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Dictionary.cpp">
+      <Filter>Source Files\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exceptions.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
     <ClCompile Include="Float.cpp">
       <Filter>Source Files\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Integer.cpp">
       <Filter>Source Files\Types</Filter>
@@ -169,7 +37,16 @@
     <ClCompile Include="List.cpp">
       <Filter>Source Files\Types</Filter>
     </ClCompile>
+    <ClCompile Include="Loops.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Operators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Queue.cpp">
+      <Filter>Source Files\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Sequence.cpp">
       <Filter>Source Files\Types</Filter>
     </ClCompile>
     <ClCompile Include="Stack.cpp">
@@ -181,96 +58,101 @@
     <ClCompile Include="Tuple.cpp">
       <Filter>Source Files\Types</Filter>
     </ClCompile>
+    <ClCompile Include="Type.cpp">
+      <Filter>Source Files\Types</Filter>
+    </ClCompile>
     <ClCompile Include="Void.cpp">
       <Filter>Source Files\Types</Filter>
     </ClCompile>
-    <ClCompile Include="Dictionary.cpp">
-      <Filter>Source Files\Types</Filter>
-    </ClCompile>
-    <ClCompile Include="Operators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="ArithmeticOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="AssignmentOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="BitwiseOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="CommentOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="ComparisionOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="IdentityOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="LogicalOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="MembershipOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="Operators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="ArithmeticOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="AssignmentOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="BitwiseOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="CommentOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="ComparisionOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="IdentityOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="LogicalOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="MembershipOperators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="Operators.cpp">
-      <Filter>Source Files\Operators</Filter>
-    </ClCompile>
-    <ClCompile Include="Blocks.cpp">
-      <Filter>Source Files\Blocks</Filter>
-    </ClCompile>
-    <ClCompile Include="Classes.cpp">
-      <Filter>Source Files\Blocks</Filter>
-    </ClCompile>
-    <ClCompile Include="Conditions.cpp">
-      <Filter>Source Files\Blocks</Filter>
-    </ClCompile>
-    <ClCompile Include="Exceptions.cpp">
-      <Filter>Source Files\Blocks</Filter>
-    </ClCompile>
-    <ClCompile Include="Loops.cpp">
-      <Filter>Source Files\Blocks</Filter>
-    </ClCompile>
-    <ClCompile Include="Functions.cpp">
-      <Filter>Source Files\Blocks</Filter>
-    </ClCompile>
-    <ClCompile Include="Helper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Blocks.h">
+      <Filter>Header Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Conditions.h">
+      <Filter>Header Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes.h">
+      <Filter>Header Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Header Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions.h">
+      <Filter>Header Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Float.h">
+      <Filter>Header Files\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Boolean.h">
+      <Filter>Header Files\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Dictionary.h">
+      <Filter>Header Files\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Integer.h">
+      <Filter>Header Files\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
+      <Filter>Header Files\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Loops.h">
+      <Filter>Header Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>Header Files\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>Header Files\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Type.h">
+      <Filter>Header Files\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Void.h">
+      <Filter>Header Files\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>Header Files\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Sequence.h">
+      <Filter>Header Files\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Tuple.h">
+      <Filter>Header Files\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Operators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d7c8df04-410f-47c0-b78d-7e2e1c7b1cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{50bc64ca-1f5c-4f4f-a6e9-aee20dcad1cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Types">
+      <UniqueIdentifier>{4a6c41e5-03e3-4c8b-a18e-15c0e2ac75f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Blocks">
+      <UniqueIdentifier>{0b1649f6-62d4-4047-94b9-9d3ad3bff2e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Blocks">
+      <UniqueIdentifier>{014b2ec9-0f8d-4757-bdcb-52dfa2103f4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types">
+      <UniqueIdentifier>{44fe56b0-2466-4b9f-9812-8d8ef8585a04}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ExceptionsMessage.txt">
-      <Filter>Header Files\Exceptions</Filter>
+      <Filter>Header Files</Filter>
     </Text>
   </ItemGroup>
 </Project>
