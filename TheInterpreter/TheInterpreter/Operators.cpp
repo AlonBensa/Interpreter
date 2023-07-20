@@ -28,11 +28,14 @@ void Operators::AssignVar(std::unordered_map<std::string, Type*> variables, std:
 bool Operators::inOperator(Type* firstType, Type* secondType)
 {
 	if (!dynamic_cast<Sequence*>(secondType)) {
-		throw new TypeError(secondType->toString());
+		std::string type = Helper::FindBasicType(secondType);
+		std::vector<std::string> values;
+		values.push_back(type);
+		throw new Exception(25, values);
 	}
 	if (dynamic_cast<Stack*>(secondType)) {
 		Stack* copyStk = ((Stack*)secondType)->copy();
-		while (!copyStk->empty()) {
+		while(!copyStk->empty()) {
 			if (firstType->toString().compare(copyStk->pop()->toString()) == 0) {
 				return true;
 			}
@@ -41,7 +44,7 @@ bool Operators::inOperator(Type* firstType, Type* secondType)
 	}
 	if (dynamic_cast<Queue*>(secondType)) {
 		Queue* copyQueue = ((Queue*)secondType)->copy();
-		while (copyQueue->count != 0) {
+		while (copyQueue->count() != 0) {
 			if (firstType->toString().compare(copyQueue->dequeue()->toString()) == 0) {
 				return true;
 			}
@@ -58,15 +61,32 @@ bool Operators::inOperator(Type* firstType, Type* secondType)
 		return false;
 	}
 	if (dynamic_cast<Dictionary*>(secondType)) {
-		//Dictionary* dictCopy = ((Dictionary*)secondType)->copy();
+		Dictionary* dictCopy = ((Dictionary*)secondType)->copy();
+		std::pair<Type*, Type*> pair1;
+		while (dictCopy->size() != 0) {
+			pair1 = dictCopy->popItem();
+			if ((pair1.first->toString() + pair1.second->toString()).compare(firstType->toString()) == 0) {
+				return true;
+			}
+		}
+		return false;
 	}
 	if (dynamic_cast<String*>(secondType)) {
-		
+		String* stringCopy = ((String*)(secondType))->copy();
+		if (stringCopy->toString().compare(firstType->toString()) == 0) {
+			return true;
+		}
+		return false;
 	}
 	if (dynamic_cast<Tuple*>(secondType)) {
-		
+		Tuple* tupleCopy = ((Tuple*)(secondType))->copy();
+		for (int i = 0; i < tupleCopy->size(); i++) {
+			if (tupleCopy[i]->toString().compare(firstType->toString()) == 0) {
+				return true;
+			}
+		}
+		return false;
 	}
-
 }
 
 bool Operators::notInOperator(Type* firstType, Type* secondType)

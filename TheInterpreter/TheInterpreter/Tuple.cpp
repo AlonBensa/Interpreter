@@ -31,5 +31,5 @@ int Tuple::count(std::string varName) const
 
 Type* Tuple::operator[](int n) const
 {
-    return this->_tuple[0];
+    return this->_tuple[n];
 }

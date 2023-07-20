@@ -1,6 +1,6 @@
 #include "Queue.h"
 
-Queue::Queue(std::queue<Type*> queue, bool isTemp)
+Queue::Queue(std::queue<Type*> queue, bool isTemp) 
 {
     this->_queue = queue;
 }
