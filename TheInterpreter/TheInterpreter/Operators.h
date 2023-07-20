@@ -1,4 +1,4 @@
-
+#include "Helper.h"
 #include "Type.h"
 #include <unordered_map>
 #include "Sequence.h"
