@@ -16,9 +16,6 @@
     <Filter Include="Header Files\Types">
       <UniqueIdentifier>{826acff5-3415-4467-ad3e-42b6ade14356}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Exceptions">
-      <UniqueIdentifier>{ece5bd9b-50be-4140-b1be-ceadbe0325c7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Types">
       <UniqueIdentifier>{b513c2a0-da68-4b39-abbe-0f3d7dd304e1}</UniqueIdentifier>
     </Filter>
@@ -36,6 +33,9 @@
     </Filter>
     <Filter Include="Header Files\Blocks">
       <UniqueIdentifier>{323977d3-8695-4d13-8627-7a250e7eb951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exceptions">
+      <UniqueIdentifier>{26ab2ed2-911c-4f01-b4d3-416d2a22fd27}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -75,80 +75,35 @@
     <ClInclude Include="Sequence.h">
       <Filter>Header Files\Types</Filter>
     </ClInclude>
-    <ClInclude Include="AttributeError.h">
-      <Filter>Header Files\Exceptions</Filter>
+    <ClInclude Include="Operators.h">
+      <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="FileExistsError.h">
-      <Filter>Header Files\Exceptions</Filter>
+    <ClInclude Include="ArithmeticOperators.h">
+      <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="FileNotFoundError.h">
-      <Filter>Header Files\Exceptions</Filter>
+    <ClInclude Include="AssignmentOperators.h">
+      <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="IdentationError.h">
-      <Filter>Header Files\Exceptions</Filter>
+    <ClInclude Include="BitwiseOperators.h">
+      <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="ImportError.h">
-      <Filter>Header Files\Exceptions</Filter>
+    <ClInclude Include="CommentOperators.h">
+      <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="IndexError.h">
-      <Filter>Header Files\Exceptions</Filter>
+    <ClInclude Include="ComparisionOperators.h">
+      <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="InterpreterExceptions.h">
-      <Filter>Header Files\Exceptions</Filter>
+    <ClInclude Include="IdentityOperators.h">
+      <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="KeyboardInterrupt.h">
-      <Filter>Header Files\Exceptions</Filter>
+    <ClInclude Include="LogicalOperators.h">
+      <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="KeyError.h">
-      <Filter>Header Files\Exceptions</Filter>
+    <ClInclude Include="MembershipOperators.h">
+      <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="MemoryError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="ModuleNotFoundError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="NameError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="NotImplementedError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="OverflowError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="PermissionError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="RecursionError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="RuntimeError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="SyntaxError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="UnboundLocalError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="UnicodeDecodeError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="UnicodeEncodeError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="UnicodeError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="UnicodeTranslateError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="ValueError.h">
-      <Filter>Header Files\Exceptions</Filter>
-    </ClInclude>
-    <ClInclude Include="ZeroDivisionError.h">
-      <Filter>Header Files\Exceptions</Filter>
+    <ClInclude Include="Operators.h">
+      <Filter>Header Files\Operators</Filter>
     </ClInclude>
     <ClInclude Include="ArithmeticOperators.h">
       <Filter>Header Files\Operators</Filter>
@@ -198,7 +153,6 @@
     <ClInclude Include="Helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TypeError.h">
       <Filter>Header Files\Exceptions</Filter>
     </ClInclude>
   </ItemGroup>
@@ -233,77 +187,35 @@
     <ClCompile Include="Dictionary.cpp">
       <Filter>Source Files\Types</Filter>
     </ClCompile>
-    <ClCompile Include="AttributeError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
+    <ClCompile Include="Operators.cpp">
+      <Filter>Source Files\Operators</Filter>
     </ClCompile>
-    <ClCompile Include="FileExistsError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
+    <ClCompile Include="ArithmeticOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
     </ClCompile>
-    <ClCompile Include="FileNotFoundError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
+    <ClCompile Include="AssignmentOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
     </ClCompile>
-    <ClCompile Include="IdentationError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
+    <ClCompile Include="BitwiseOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
     </ClCompile>
-    <ClCompile Include="ImportError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
+    <ClCompile Include="CommentOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
     </ClCompile>
-    <ClCompile Include="IndexError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
+    <ClCompile Include="ComparisionOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
     </ClCompile>
-    <ClCompile Include="KeyboardInterrupt.cpp">
-      <Filter>Source Files\Exceptions</Filter>
+    <ClCompile Include="IdentityOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
     </ClCompile>
-    <ClCompile Include="KeyError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
+    <ClCompile Include="LogicalOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
     </ClCompile>
-    <ClCompile Include="ModuleNotFoundError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
+    <ClCompile Include="MembershipOperators.cpp">
+      <Filter>Source Files\Operators</Filter>
     </ClCompile>
-    <ClCompile Include="MemoryError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="NameError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="NotImplementedError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="PermissionError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="OverflowError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="RecursionError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="RuntimeError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="SyntaxError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="UnboundLocalError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="UnicodeDecodeError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="UnicodeEncodeError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="UnicodeError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="UnicodeTranslateError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="ValueError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
-    </ClCompile>
-    <ClCompile Include="ZeroDivisionError.cpp">
-      <Filter>Source Files\Exceptions</Filter>
+    <ClCompile Include="Operators.cpp">
+      <Filter>Source Files\Operators</Filter>
     </ClCompile>
     <ClCompile Include="ArithmeticOperators.cpp">
       <Filter>Source Files\Operators</Filter>
@@ -353,14 +265,12 @@
     <ClCompile Include="Helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TypeError.cpp">
       <Filter>Source Files\Exceptions</Filter>
     </ClCompile>
-    <ClCompile Include="Type.cpp">
-      <Filter>Source Files\Types</Filter>
-    </ClCompile>
-    <ClCompile Include="Sequence.cpp">
-      <Filter>Source Files\Types</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ExceptionsMessage.txt">
+      <Filter>Header Files\Exceptions</Filter>
+    </Text>
   </ItemGroup>
 </Project>

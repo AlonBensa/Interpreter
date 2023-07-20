@@ -4,7 +4,6 @@
 #include "ValueError.h"
 #include "IndexError.h"
 #include "TypeError.h"
-#include "Helper.h"
 #include <vector>
 
 class List : public Sequence
