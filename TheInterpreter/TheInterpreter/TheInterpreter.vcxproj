@@ -19,97 +19,53 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AttributeError.h" />
     <ClInclude Include="Blocks.h" />
     <ClInclude Include="Boolean.h" />
     <ClInclude Include="Classes.h" />
     <ClInclude Include="Conditions.h" />
     <ClInclude Include="Dictionary.h" />
+    <ClInclude Include="Exception.h" />
     <ClInclude Include="Exceptions.h" />
-    <ClInclude Include="FileExistsError.h" />
-    <ClInclude Include="FileNotFoundError.h" />
     <ClInclude Include="Float.h" />
     <ClInclude Include="Functions.h" />
     <ClInclude Include="Helper.h" />
-    <ClInclude Include="IdentationError.h" />
-    <ClInclude Include="ImportError.h" />
-    <ClInclude Include="IndexError.h" />
     <ClInclude Include="Integer.h" />
-    <ClInclude Include="InterpreterExceptions.h" />
-    <ClInclude Include="KeyboardInterrupt.h" />
-    <ClInclude Include="KeyError.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="Loops.h" />
-    <ClInclude Include="MemoryError.h" />
-    <ClInclude Include="ModuleNotFoundError.h" />
-    <ClInclude Include="NameError.h" />
-    <ClInclude Include="NotImplementedError.h" />
     <ClInclude Include="Operators.h" />
-    <ClInclude Include="OverflowError.h" />
-    <ClInclude Include="PermissionError.h" />
     <ClInclude Include="Queue.h" />
-    <ClInclude Include="RecursionError.h" />
-    <ClInclude Include="RuntimeError.h" />
     <ClInclude Include="Sequence.h" />
     <ClInclude Include="Stack.h" />
     <ClInclude Include="String.h" />
-    <ClInclude Include="SyntaxError.h" />
     <ClInclude Include="Tuple.h" />
     <ClInclude Include="Type.h" />
-    <ClInclude Include="TypeError.h" />
-    <ClInclude Include="UnboundLocalError.h" />
-    <ClInclude Include="UnicodeDecodeError.h" />
-    <ClInclude Include="UnicodeEncodeError.h" />
-    <ClInclude Include="UnicodeError.h" />
-    <ClInclude Include="UnicodeTranslateError.h" />
-    <ClInclude Include="ValueError.h" />
     <ClInclude Include="Void.h" />
-    <ClInclude Include="ZeroDivisionError.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AttributeError.cpp" />
     <ClCompile Include="Blocks.cpp" />
     <ClCompile Include="Boolean.cpp" />
     <ClCompile Include="Classes.cpp" />
     <ClCompile Include="Conditions.cpp" />
     <ClCompile Include="Dictionary.cpp" />
+    <ClCompile Include="Exception.cpp" />
     <ClCompile Include="Exceptions.cpp" />
-    <ClCompile Include="FileExistsError.cpp" />
-    <ClCompile Include="FileNotFoundError.cpp" />
     <ClCompile Include="Float.cpp" />
     <ClCompile Include="Functions.cpp" />
     <ClCompile Include="Helper.cpp" />
-    <ClCompile Include="IdentationError.cpp" />
-    <ClCompile Include="ImportError.cpp" />
-    <ClCompile Include="IndexError.cpp" />
     <ClCompile Include="Integer.cpp" />
-    <ClCompile Include="KeyboardInterrupt.cpp" />
-    <ClCompile Include="KeyError.cpp" />
     <ClCompile Include="List.cpp" />
     <ClCompile Include="Loops.cpp" />
-    <ClCompile Include="MemoryError.cpp" />
-    <ClCompile Include="ModuleNotFoundError.cpp" />
-    <ClCompile Include="NameError.cpp" />
-    <ClCompile Include="NotImplementedError.cpp" />
     <ClCompile Include="Operators.cpp" />
-    <ClCompile Include="OverflowError.cpp" />
-    <ClCompile Include="PermissionError.cpp" />
     <ClCompile Include="Queue.cpp" />
-    <ClCompile Include="RecursionError.cpp" />
-    <ClCompile Include="RuntimeError.cpp" />
+    <ClCompile Include="Sequence.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="String.cpp" />
-    <ClCompile Include="SyntaxError.cpp" />
     <ClCompile Include="Tuple.cpp" />
-    <ClCompile Include="TypeError.cpp" />
-    <ClCompile Include="UnboundLocalError.cpp" />
-    <ClCompile Include="UnicodeDecodeError.cpp" />
-    <ClCompile Include="UnicodeEncodeError.cpp" />
-    <ClCompile Include="UnicodeError.cpp" />
-    <ClCompile Include="UnicodeTranslateError.cpp" />
-    <ClCompile Include="ValueError.cpp" />
+    <ClCompile Include="Type.cpp" />
     <ClCompile Include="Void.cpp" />
-    <ClCompile Include="ZeroDivisionError.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ExceptionsMessage.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

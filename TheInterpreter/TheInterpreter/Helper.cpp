@@ -19,7 +19,6 @@ int Helper::getIndex(int length, int index)
 	}
 	return length + index;
 }
-
 std::string Helper::FindBasicType(Type* type)
 {
     if (dynamic_cast<Float*>(type)) {
@@ -36,4 +35,3 @@ std::string Helper::FindBasicType(Type* type)
     }
     return "";
 }
-

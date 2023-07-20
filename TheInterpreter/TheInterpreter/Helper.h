@@ -20,4 +20,3 @@ public:
 	static int getIndex(int length,int index);
 	static std::string FindBasicType(Type* type);
 };
-
