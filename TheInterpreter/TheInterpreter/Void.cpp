@@ -11,7 +11,7 @@ bool Void::isPrintable() const
 
 std::string Void::toString() const
 {
-    return std::string();
+    return "";
 }
 
 std::string Void::getType() const

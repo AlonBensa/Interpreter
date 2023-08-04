@@ -14,7 +14,7 @@ public:
 	std::string getType() const override;
 	std::vector<Type*> copy();
 
-	int index(std::string varName) const;
-	int count(std::string varName) const;
+	int index(Type* obj) const;
+	int count(Type* obj) const;
 	Type* operator[](int n) const;
 };
